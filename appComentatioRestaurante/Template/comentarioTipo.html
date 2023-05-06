@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign</title>
+    <style>
+        *{
+           margin: 0; 
+           padding: 0;
+           box-sizing: border-box;
+        }
+        .form-register{
+            width: 400px;
+            background: peachpuff;
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 4px;
+        }
+
+        .controls{
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border:1px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+
+<body >
+    
+    <section class="form-register"> 
+        <h1 class="titulo">Tu opinion es importante </h1>
+        <form action="/predecir/" method="post">
+            {% csrf_token %}
+            <p >Comentario:
+                <input type="text" name="comentario" class="controls"></p>
+            <p>Servicio:
+                <input type="number" name="servicio" class="controls"></p>
+            <p>Comida:
+                <input type="number" name="comida" class="controls" ></p>
+            <p>Ambiente:
+                <input type="number" name="ambiente" class="controls"></p>
+            <p class=""><input type="submit" value="Enviar"></p>
+        </form>
+
+    </section>
+</body>
+
+    </section>
+</body>
+</html>
+
+
+
+
+
+
